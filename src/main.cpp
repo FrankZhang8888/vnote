@@ -35,6 +35,10 @@ void showMessageOnCommandLineIfAvailable(const QString &p_msg);
 
 int main(int argc, char *argv[])
 {
+
+    qDebug()<<"frank is doing something from here....." ;
+
+
     QTextCodec *codec = QTextCodec::codecForName("UTF8");
     if (codec) {
         QTextCodec::setCodecForLocale(codec);
